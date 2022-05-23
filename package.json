@@ -22,7 +22,7 @@
     "build:types": "node tools/cleanup types && tsc -p config/tsconfig.types.json",
     "clean": "node tools/cleanup",
     "package": "npm run build && npm pack",
-    "test": "jest --no-cache --runInBand",
+    "test": "jest --no-cache --runInBand --passWithNoTests",
     "test:cov": "jest --coverage --no-cache --runInBand",
     "addscope": "node tools/packagejson name @gmangiapelo/wdio-azure-devops-service"
   },
