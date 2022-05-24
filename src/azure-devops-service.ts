@@ -27,18 +27,21 @@ export default class AzureDevopsService implements Services.ServiceInstance {
   }
 
   async afterTest(test: Test, context: any, result: TestResult): Promise<void> {
-    const caseId = this.parseCaseIDString(test.fullTitle)
+    let caseId = this.parseCaseIDString(test.parent)
 
     if (caseId == 'notDefined') {
-      return new Promise((resolve) => {
-        resolve()
-      })
+      caseId = this.parseCaseIDString(test.title)
+      if (caseId == 'notDefined') {
+        return new Promise((resolve) => {
+          resolve()
+        })
+      }
     }
 
     const testResult: ITestResult = {
       testCaseId: caseId,
       result: result.passed ? 'Passed' : 'Failed',
-      message: result.error || '',
+      message: '', // pass a substring of result.error
     }
 
     await this._azureReporter.init()
