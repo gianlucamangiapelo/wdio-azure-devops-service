@@ -1,6 +1,6 @@
 {
   "name": "wdio-azure-devops-service",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Wdio Service to inject result of automatic test run in Azure DevOps TestPlan",
   "types": "dist/esm/index.d.ts",
   "main": "dist/cjs/index.js",
@@ -56,7 +56,7 @@
   "dependencies": {
     "@cucumber/cucumber": "^8.2.1",
     "@cucumber/messages": "^18.0.0",
-    "@gmangiapelo/azuredevops-test-reporter": "^0.0.5",
+    "@gmangiapelo/azuredevops-test-reporter": "^0.0.6",
     "@wdio/reporter": "^7.19.7",
     "@wdio/types": "^7.19.5",
     "azure-devops-node-api": "^11.1.1",
