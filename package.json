@@ -1,6 +1,6 @@
 {
   "name": "wdio-azure-devops-service",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Wdio Service to inject result of automatic test run in Azure DevOps TestPlan",
   "types": "dist/esm/index.d.ts",
   "main": "dist/cjs/index.js",
