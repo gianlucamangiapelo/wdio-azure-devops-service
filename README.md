@@ -153,7 +153,7 @@ Required: `true`
 
 A descriptive name for the test run.
 
-Example: `FE regression tests run`
+Example: `"FE regression tests run"`
 
 Type: `string`
 
@@ -165,7 +165,7 @@ Custom regular expression to match the testCaseId from tag or title test case.
 
 Type: `string`
 
-Default: `/@?[cC](\d+)/g`
+Default: `"@?[cC](\d+)"`
 
 Required: `false`
 
