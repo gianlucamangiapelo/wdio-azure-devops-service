@@ -10,7 +10,7 @@ Core features:
 * Support for Jasmine/Jest/Mocha and Cucumber runtime frameworks
 * Test results are aggregated under the same test run if you are executing more spec(test) files and they are belongs to the same suite
 * Results are reported immediately after single test execution (real-time reporting)
-* Test run would be closed after last spec(test) file has been finished
+* Test run is closed after last spec(test) file has been finished
 * Multi suite support
 
 
@@ -33,7 +33,7 @@ Instructions on how to install `WebdriverIO` can be found [here.](https://webdri
 
 ### Configuration
 
-`@gmangiapelo/wdio-azure-devops-service` is a service so it can be used as a normal service. You can set it up in your `wdio.conf.js` file with the following
+Since `@gmangiapelo/wdio-azure-devops-service` is a service, you can set it up in your `wdio.conf.js` file as follows
 
 ```js
 import AzureDevopsService from "@gmangiapelo/wdio-azure-devops-service";
@@ -99,7 +99,7 @@ This is an example of the results pushed on AZ Test Plans, during a test run
 
 ### pat
 
-The Personal Access token generated in Azure DevOps with API permission set
+The Personal Access token generated in Azure DevOps with API permission set.
 
 Example: `"u46xjx2ol4px36zg3z565uz52dbvshctlulkhrsecxiamn6nhtwa"`
 
@@ -109,7 +109,7 @@ Required: `true`
 
 ### organizationUrl
 
-The base url of your Azure DevOps instance
+The base url of your Azure DevOps instance.
 
 Example: `"https://dev.azure.com/gianlucamangiapelo"`
 
@@ -121,7 +121,7 @@ Required: `true`
 
 The id of the project in Azure DevOps.
 
-To find the projectId use `GET {organizationUrl}/_apis/projects?api-version=6.0` and copy the appropriate `id`
+To find the projectId use `GET {organizationUrl}/_apis/projects?api-version=6.0` and copy the appropriate `id`.
 
 Example: `"3cf7dbc9-cb1e-4240-93f2-9a5960ab3945"`
 
@@ -131,7 +131,7 @@ Required: `true`
 
 ### planId
 
-The test plainId that you can retrieve in Azure DevOps Test Plan section
+The test plainId that you can retrieve in Azure DevOps Test Plan section.
 
 Example: `124`
 
@@ -151,7 +151,7 @@ Required: `true`
 
 ### runName
 
-Decide a descriptive name for the test run.
+A descriptive name for the test run.
 
 Example: `FE regression tests run`
 
@@ -161,7 +161,7 @@ Required: `true`
 
 ### caseIdRegex
 
-Provide a custom regular expression to match the testCaseId from tag or title test case
+Custom regular expression to match the testCaseId from tag or title test case.
 
 Type: `string`
 
