@@ -1,17 +1,15 @@
 import { IAzureConfig, ITestResult } from './interface'
 import { AzureTestPlanReporter } from '@gmangiapelo/azuredevops-test-reporter'
-import { Capabilities, Frameworks, Options, Services } from '@wdio/types'
+import { Frameworks, Services } from '@wdio/types'
 import { PickleTag } from '@cucumber/messages'
 import { ITestCaseHookParameter } from '@cucumber/cucumber'
 import { Test, TestResult } from '@wdio/types/build/Frameworks'
 
 export default class AzureDevopsService implements Services.ServiceInstance {
-  private _azureReporter: AzureTestPlanReporter
+  private readonly _azureReporter: AzureTestPlanReporter
 
   constructor(
-    private _options: IAzureConfig,
-    private _capabilities: Capabilities.RemoteCapability,
-    private _config: Omit<Options.Testrunner, 'capabilities'>
+    private readonly _options: IAzureConfig
   ) {
     _options = Object.assign(_options, { stdout: true })
     this._azureReporter = new AzureTestPlanReporter(this._options)
