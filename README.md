@@ -47,7 +47,7 @@ exports.config = {
         [
               AzureDevopsService,
               {
-                  pat: 'u46xjx2ol4px36zg3z565uz52dbvshctlulkhrsecxiamn6nhtwa',
+                  pat: '3qaPw0PnOyQ6mb8gwN7n9aIQtccn8FtsZ2s1tSIzo6yAt6eK9BInJQGJ99BDACAAAAAu9TDCAAASAZDO2Onn',
                   organizationUrl: 'https://dev.azure.com/gianlucamangiapelo',
                   projectId: '8b3c68ac-f69d-41c6-bbad-921d8bae9819',
                   planId: 263072,
@@ -101,7 +101,7 @@ This is an example of the results pushed on AZ Test Plans, during a test run
 
 The Personal Access token generated in Azure DevOps with API permission set.
 
-Example: `"u46xjx2ol4px36zg3z565uz52dbvshctlulkhrsecxiamn6nhtwa"`
+Example: `"3qaPw0PnOyQ6mb8gwN7n9aIQtccn8FtsZ2s1tSIzo6yAt6eK9BInJQGJ99BDACAAAAAu9TDCAAASAZDO2Onn"`
 
 Type: `string`
 

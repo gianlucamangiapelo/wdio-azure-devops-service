@@ -1,6 +1,6 @@
 {
   "name": "wdio-azure-devops-service",
-  "version": "0.0.11",
+  "version": "0.1.0",
   "description": "Wdio Service to inject result of automatic test run in Azure DevOps TestPlan",
   "types": "dist/esm/index.d.ts",
   "main": "dist/cjs/index.js",
@@ -22,8 +22,6 @@
     "build:types": "node tools/cleanup types && tsc -p config/tsconfig.types.json",
     "clean": "node tools/cleanup",
     "package": "npm run build && npm pack",
-    "test": "jest --no-cache --runInBand --passWithNoTests",
-    "test:cov": "jest --coverage --no-cache --runInBand",
     "addscope": "node tools/packagejson name @gmangiapelo/wdio-azure-devops-service"
   },
   "publishConfig": {
@@ -54,31 +52,32 @@
     "url": "https://github.com/gianlucamangiapelo/wdio-azure-devops-service/issues"
   },
   "dependencies": {
-    "@cucumber/cucumber": "^8.2.1",
-    "@cucumber/messages": "^18.0.0",
-    "@gmangiapelo/azuredevops-test-reporter": "^0.0.9",
-    "@wdio/reporter": "^7.19.7",
-    "@wdio/types": "^7.19.5",
-    "azure-devops-node-api": "^11.1.1",
-    "validate": "^5.2.0"
+    "@cucumber/cucumber": "11.2.0",
+    "@cucumber/messages": "27.2.0",
+    "@gmangiapelo/azuredevops-test-reporter": "0.1.0",
+    "@wdio/reporter": "9.12.3",
+    "@wdio/types": "9.12.3",
+    "azure-devops-node-api": "14.1.0",
+    "validate": "5.2.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^13.1.0",
-    "@types/jest": "^27.0.1",
-    "@typescript-eslint/eslint-plugin": "^4.31.1",
-    "@typescript-eslint/parser": "^4.31.1",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "husky": "^7.0.2",
-    "jest": "^27.2.0",
-    "pinst": "^2.1.6",
-    "prettier": "^2.4.0",
-    "ts-jest": "^27.0.5",
-    "ts-loader": "^9.2.5",
-    "typescript": "^4.4.3",
-    "webpack": "^5.52.1",
-    "webpack-cli": "^4.8.0"
+    "@commitlint/cli": "19.8.0",
+    "@commitlint/config-conventional": "19.8.0",
+    "@types/jest": "29.5.14",
+    "@typescript-eslint/eslint-plugin": "8.29.1",
+    "@typescript-eslint/parser": "8.29.1",
+    "eslint": "9.24.0",
+    "eslint-config-prettier": "10.1.2",
+    "eslint-plugin-prettier": "5.2.6",
+    "husky": "9.1.7",
+    "jest": "29.7.0",
+    "pinst": "3.0.0",
+    "prettier": "3.5.3",
+    "ts-jest": "29.3.1",
+    "ts-loader": "9.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "5.8.3",
+    "webpack": "5.99.5",
+    "webpack-cli": "6.0.1"
   }
 }
